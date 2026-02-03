@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiyan | Clover Gamez Lead Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --secondary: #3a7bd5;
+            --bg: #0b0e14;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background Particles */
+        .bg-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1a2a6c 0%, transparent 50%);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 100px 0;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            background: linear-gradient(to right, var(--primary), #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #aaa;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Skill Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: var(--glass);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 210, 255, 0.2);
+        }
+
+        .card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        .btn-group {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #000;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--primary);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <div class="container">
+        <header>
+            <p class="tagline">Lead Developer @ Clover Gamez</p>
+            <h1>ADIYAN</h1>
+            <p style="max-width: 600px; margin: 20px auto; color: #ccc; line-height: 1.6;">
+                Specializing in high-performance Luau scripting, professional R6/R15 animations, and game economy architecture. Turning ice-cold concepts into burning-hot realities.
+            </p>
+            
+            <div class="btn-group">
+                <a href="https://www.fiverr.com/sellers/adiyan_official" class="btn btn-primary">
+                    <i class="fa-solid fa-briefcase"></i> HIRE ME ON FIVERR
+                </a>
+                <a href="https://t.me/Adiyan_official11" class="btn btn-outline">
+                    <i class="fa-brands fa-telegram"></i> CONTACT TELEGRAM
+                </a>
+            </div>
+        </header>
+
+        <section class="grid">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Advanced Scripting</h3>
+                <p>System Architecture, DataStores, and Optimized Game Loops.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-person-running"></i>
+                <h3>Animation</h3>
+                <p>Stylized Movement Sets, Combat, and Tactical Motion Design.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Game Design</h3>
+                <p>Idea Generation, Economy Balancing, and Project Management.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-bug-slash"></i>
+                <h3>Testing & QA</h3>
+                <p>Exploit Simulation and Deep-Dive Stress Testing.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Clover Gamez | Discord: adigusi</p>
+        </footer>
+    </div>
+
+</body>
+</html>
